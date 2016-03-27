@@ -4,6 +4,16 @@ Rails.application.configure do
   # Code is not reloaded between requests.
   config.cache_classes = true
 
+  config.s3 = {
+    :base_url =>'https://s3.amazonaws.com',
+    :bucket => ENV['DEV_AWS_BUCKET'],
+    :private_bucket => ENV['DEV_AWS_PRIVATE_BUCKET'],
+    :cloudfront => ENV['CLOUDFRONT_URL'],
+    :watermark_bucket => ENV['DEV_AWS_WATERMARK_BUCKET'],
+    :key => ENV['DEV_AWS_ACCESS_KEY_ID'],
+    :secret => ENV['DEV_AWS_SECRET_ACCESS_KEY']
+  }
+
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both threaded web servers
   # and those relying on copy on write to perform better.
