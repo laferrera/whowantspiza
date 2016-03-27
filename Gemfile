@@ -41,6 +41,7 @@ gem 'carrierwave'
 gem 'fog'
 gem 'aws-sdk-v1'
 gem 'aws-sdk', '~> 2'
+gem 'quiet_assets', group: :development
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
