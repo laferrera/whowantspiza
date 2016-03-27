@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  mount Rich::Engine => '/rich', :as => 'rich'
+  mount Bootsy::Engine => '/bootsy', as: 'bootsy'
+  devise_for :users
+  mount RailsAdmin::Engine => '/studio', as: 'rails_admin'
   resources :widgets
 
   # The priority is based upon order of creation: first created -> highest priority.
