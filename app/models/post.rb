@@ -5,6 +5,7 @@ class Post < ActiveRecord::Base
     edit do
       field :title
       field :user_id
+      field :grid_image, :rich_picker
       field :body, :rich_editor do
            config({
              :insert_many => true

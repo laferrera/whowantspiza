@@ -2,7 +2,6 @@ require "rich"
 
 if Object.const_defined?("Rich")
   Rich.setup do |config|    
-    
     # == CKEditor configuration
     # 
     # Rich ships with what I hope are sensible defaults. 

@@ -36,6 +36,7 @@ gem "cancancan"
 gem 'rails_admin'
 gem 'rich', github: 'bastiaanterhorst/rich'
 gem "paperclip"
+gem 'carrierwave'
 gem 'fog'
 gem 'aws-sdk-v1'
 gem 'aws-sdk', '~> 2'

@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20160327113952) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.text     "body",       null: false
+    t.string   "grid_image"
     t.string   "title",      null: false
     t.integer  "user_id"
   end

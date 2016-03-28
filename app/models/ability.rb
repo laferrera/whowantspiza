@@ -30,6 +30,7 @@ class Ability
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
     
     can :access, :rails_admin   # grant access to rails_admin
+    can :access, :rich
     can :dashboard  
     
   end
