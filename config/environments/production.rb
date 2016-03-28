@@ -19,7 +19,8 @@ Rails.application.configure do
     :s3_credentials => {
       :access_key_id => ENV['AWS_ACCESS_KEY_ID'],
       :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
-    }
+    },
+    :s3_host_alias => ENV['CLOUDFRONT_URL']
   )
 
   # Eager load code on boot. This eager loads most of Rails and
