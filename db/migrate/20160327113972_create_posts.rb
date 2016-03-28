@@ -6,7 +6,9 @@ class CreatePosts < ActiveRecord::Migration
       t.text :body, null: false
       t.integer :grid_image_id, null: true
       t.string :title, null: false
+      t.string :slug
       t.references :user
     end
+    # add_index :posts, :slug, :unique => true
   end
 end

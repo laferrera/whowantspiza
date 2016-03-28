@@ -41,6 +41,7 @@ gem 'fog'
 gem 'aws-sdk-v1'
 gem 'aws-sdk', '~> 2'
 gem 'quiet_assets', group: :development
+gem 'byebug', group: :development
 gem 'font_assets'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development

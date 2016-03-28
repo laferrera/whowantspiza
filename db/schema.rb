@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20160327113972) do
     t.text     "body",          null: false
     t.integer  "grid_image_id"
     t.string   "title",         null: false
+    t.string   "slug"
     t.integer  "user_id"
   end
 

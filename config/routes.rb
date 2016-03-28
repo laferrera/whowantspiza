@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  resources :posts
   mount Rich::Engine => '/rich', :as => 'rich'
   devise_for :users
   mount RailsAdmin::Engine => '/studio', as: 'rails_admin'
   resources :widgets
-  resources :posts
+  resources :posts,  param: :slug
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
