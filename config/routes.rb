@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :posts
   mount Rich::Engine => '/rich', :as => 'rich'
   devise_for :users
   mount RailsAdmin::Engine => '/studio', as: 'rails_admin'

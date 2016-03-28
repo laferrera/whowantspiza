@@ -5,15 +5,17 @@ Rails.application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   
-  config.s3 = {
-    :base_url =>'https://s3.amazonaws.com',
-    :bucket => ENV['DEV_AWS_BUCKET'],
-    :private_bucket => ENV['DEV_AWS_PRIVATE_BUCKET'],
-    :cloudfront => ENV['CLOUDFRONT_URL'],
-    :watermark_bucket => ENV['DEV_AWS_WATERMARK_BUCKET'],
-    :key => ENV['DEV_AWS_ACCESS_KEY_ID'],
-    :secret => ENV['DEV_AWS_SECRET_ACCESS_KEY']
-  }
+  
+  config.s3 = {}
+  # config.s3 = {
+  #   :base_url =>'https://s3.amazonaws.com',
+  #   :bucket => ENV['DEV_AWS_BUCKET'],
+  #   :private_bucket => ENV['DEV_AWS_PRIVATE_BUCKET'],
+  #   :cloudfront => ENV['CLOUDFRONT_URL'],
+  #   :watermark_bucket => ENV['DEV_AWS_WATERMARK_BUCKET'],
+  #   :key => ENV['DEV_AWS_ACCESS_KEY_ID'],
+  #   :secret => ENV['DEV_AWS_SECRET_ACCESS_KEY']
+  # }
   
   config.cache_classes = false
 
