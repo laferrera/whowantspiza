@@ -5,7 +5,9 @@ class Post < ActiveRecord::Base
     edit do
       field :title
       field :user_id
-      field :grid_image, :rich_picker
+      field :grid_image_id, :rich_picker do
+        formatted_value{ bindings[:object].id }
+      end
       field :body, :rich_editor do
            config({
              :insert_many => true
