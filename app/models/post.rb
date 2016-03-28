@@ -1,5 +1,4 @@
 class Post < ActiveRecord::Base
-  include Bootsy::Container  
   
   
   rails_admin do
