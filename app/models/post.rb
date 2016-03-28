@@ -1,10 +1,10 @@
 class Post < ActiveRecord::Base
-  
+  belongs_to :user
   
   rails_admin do
     edit do
       field :title
-      field :user_id
+      field :user
       field :grid_image_id, :rich_picker do
         formatted_value{ bindings[:object].id }
       end
