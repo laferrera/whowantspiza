@@ -34,7 +34,6 @@ gem 'puma'
 gem 'devise'
 gem "cancancan"
 gem 'rails_admin'
-gem 'bootsy'
 gem 'rich', github: 'bastiaanterhorst/rich'
 gem "paperclip"
 gem 'carrierwave'
