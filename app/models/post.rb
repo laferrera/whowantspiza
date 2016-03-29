@@ -16,7 +16,10 @@ class Post < ActiveRecord::Base
   # end
   
   def generate_slug
-    optimal_slug = self.title.parameterize
+    optimal_slug = self.title.downcase.parameterize
+    if Post.where(title:optimal_slug).count > 0
+      optimal_slug += "-#{self.id}"
+    end
     self.slug = optimal_slug
   end
   
