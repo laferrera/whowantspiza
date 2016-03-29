@@ -1,5 +1,11 @@
+<% content_for :head do %>
+  <title><%= @post.title %></title>
+<% end %>
+
 <p id="notice"><%= notice %></p>
 
+<%= @post.title.html_safe %>
+<%= @post.user.email %>
 <%= @post.body.html_safe %>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
